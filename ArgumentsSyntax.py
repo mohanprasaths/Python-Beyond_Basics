@@ -30,3 +30,10 @@ def printKeyVariableArgs(a,b,*args,**kwargs):
         print("{k} is {v}".format(k = str(values),v = kwargs[values]))
 
 printKeyVariableArgs(1,2,3,4,5,6,78,name="mohan",profession="developer")
+
+#extendedCallSyntax
+tupleList = (1,2,3,4,5,6,7,9)
+printVariableArgs(*tupleList)
+
+new_dict = {"a":1, "b":2, "args":(12,32), "kwargs":{"a":"b"}}
+printKeyVariableArgs(**new_dict)
