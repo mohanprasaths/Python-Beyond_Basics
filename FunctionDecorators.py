@@ -31,3 +31,25 @@ def sayHello():
 sayHello()
 sayHello()
 print(sayHello.count)
+
+#Instance as decorator
+class Tracer:
+    def __init__(self):
+        self.enabled =True
+
+    def __call__(self,f ):
+        def wrapper(*args,**kwargs):
+            if self.enabled:
+                print("Calling function and inside tracer")
+            f(*args,**kwargs)
+        return wrapper
+
+tracer = Tracer()
+
+@tracer
+def sayHi(name):
+    print("Hello {name}".format(name=name))
+
+sayHi("mohan")
+tracer.enabled = False
+sayHi("batman")
