@@ -12,3 +12,22 @@ def add(a,b):
 
 
 add(1,2,3)
+
+class callCount:
+    def __init__(self,f):
+        self.count = 0
+        self.f = f
+
+
+    def __call__(self, *args, **kwargs):
+        self.count +=1
+        self.f(*args,**kwargs)
+
+@callCount
+def sayHello():
+    print("Hello")
+
+
+sayHello()
+sayHello()
+print(sayHello.count)
