@@ -1,4 +1,6 @@
 class CallableClass:
+    def __call__(self, *args, **kwargs):
+        print("something")
     def check(self):
         print("check")
 
@@ -21,3 +23,6 @@ instanceObjNotwokr = CallableClass()
 print(callable(instanceObj))
 print(callable(instanceObjNotwokr))
 print(callable(lambdaCheck))
+
+callObj = CallableClass()
+callObj()
