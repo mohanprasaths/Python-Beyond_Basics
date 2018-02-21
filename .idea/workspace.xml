@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="134b3a54-e231-4bb8-8d9d-8936f25939bf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/closures.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FunctionDecorators.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Callabletests.py" afterPath="$PROJECT_DIR$/Callabletests.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,16 +15,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="FunctionMain.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FunctionMain.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -68,11 +57,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="closures.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="closures.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/closures.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
               <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FunctionDecorators.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/FunctionDecorators.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40">
+              <caret line="2" column="37" lean-forward="false" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -144,6 +143,7 @@
         <option value="$PROJECT_DIR$/tableTranspose.py" />
         <option value="$PROJECT_DIR$/Callabletests.py" />
         <option value="$PROJECT_DIR$/closures.py" />
+        <option value="$PROJECT_DIR$/FunctionDecorators.py" />
       </list>
     </option>
   </component>
@@ -201,25 +201,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.closures">
-    <configuration default="false" name="lambdaFunctions" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Python-Beyond_Basics" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lambdaFunctions.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.FunctionDecorators">
     <configuration default="false" name="Callabletests" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -292,6 +274,24 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
+    <configuration default="false" name="FunctionDecorators" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Python-Beyond_Basics" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FunctionDecorators.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -358,19 +358,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.lambdaFunctions" />
-      <item index="1" class="java.lang.String" itemvalue="Python.Callabletests" />
-      <item index="2" class="java.lang.String" itemvalue="Python.ArgumentsSyntax" />
-      <item index="3" class="java.lang.String" itemvalue="Python.tableTranspose" />
-      <item index="4" class="java.lang.String" itemvalue="Python.closures" />
+      <item index="0" class="java.lang.String" itemvalue="Python.Callabletests" />
+      <item index="1" class="java.lang.String" itemvalue="Python.ArgumentsSyntax" />
+      <item index="2" class="java.lang.String" itemvalue="Python.tableTranspose" />
+      <item index="3" class="java.lang.String" itemvalue="Python.closures" />
+      <item index="4" class="java.lang.String" itemvalue="Python.FunctionDecorators" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.closures" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Callabletests" />
-        <item index="2" class="java.lang.String" itemvalue="Python.tableTranspose" />
-        <item index="3" class="java.lang.String" itemvalue="Python.ArgumentsSyntax" />
-        <item index="4" class="java.lang.String" itemvalue="Python.lambdaFunctions" />
+        <item index="0" class="java.lang.String" itemvalue="Python.FunctionDecorators" />
+        <item index="1" class="java.lang.String" itemvalue="Python.closures" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Callabletests" />
+        <item index="3" class="java.lang.String" itemvalue="Python.tableTranspose" />
+        <item index="4" class="java.lang.String" itemvalue="Python.ArgumentsSyntax" />
       </list>
     </recent_temporary>
   </component>
@@ -732,6 +732,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FunctionDecorators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="37" lean-forward="false" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
           <folding />
         </state>
       </provider>
