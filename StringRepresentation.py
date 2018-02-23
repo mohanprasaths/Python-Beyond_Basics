@@ -1,7 +1,9 @@
+from functools import reduce
 class InfinityStones:
-    def __init__(self,name,power):
+    def __init__(self,name,power,value):
         self.name = name
         self.power = power
+        self.value = value
 
 
     def __str__(self):
@@ -15,10 +17,10 @@ class InfinityStones:
         print(obj.name , obj.power)
         return obj.name
 
-mindstone = InfinityStones("mindstone", "control people")
-tesseract = InfinityStones("tesseract" , "Opnes portal")
-time = InfinityStones("timestone","time travel")
-power = InfinityStones("power" ,"infinite power")
+mindstone = InfinityStones("mindstone", "control people",80)
+tesseract = InfinityStones("tesseract" , "Opnes portal",89)
+time = InfinityStones("timestone","time travel",99)
+power = InfinityStones("power" ,"infinite power",100)
 
 gem_list = []
 gem_list.append(mindstone)
@@ -38,3 +40,23 @@ map_obj = map(InfinityStones.printWithValues,gem_list)
 
 for o in map(InfinityStones.printWithValues,gem_list):
     print(o)
+
+
+#Filter
+def filter_my_infy(obj):
+    if((obj.value)>= 90):
+        return True
+    return False
+
+
+print("My powers stones are")
+power_infinity_stones = filter(filter_my_infy,gem_list)
+for o in map(InfinityStones.printWithValues,power_infinity_stones):
+    print(o)
+
+#reduce
+def my_infy_power_reducer(cumu_value , obj):
+    return cumu_value + obj.value
+
+cumuValue = reduce(my_infy_power_reducer,gem_list,500)
+print(cumuValue)
