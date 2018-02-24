@@ -60,3 +60,7 @@ def my_infy_power_reducer(cumu_value , obj):
 
 cumuValue = reduce(my_infy_power_reducer,gem_list,500)
 print(cumuValue)
+
+dict_list= []
+dict_list.append(({i:i*2 for i in range(10)}))
+print(dict_list)
